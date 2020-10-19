@@ -1,0 +1,441 @@
+if game.CoreGui:FindFirstChild("KreekHub") then
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kreek Hub",
+		Text = "Script already loaded!",
+		Duration = 5,
+	})
+
+else
+
+	---------------------------------------------------------------------------------------------
+
+
+
+	local fps = 60
+	local clock = tick()
+
+	spawn(function()
+		while true do
+			while clock + 1/fps > tick() do end
+			wait()
+			clock = tick()
+		end
+	end)
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kreek Hub",
+		Text = "Loading...",
+		Duration = 5,
+	}
+	)
+
+	wait(1)
+
+	fps = 0.5
+
+	wait(2)
+
+	fps = 60
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loaded Kreek Hub!",
+		Text = "Made by ImNotKreek#0001",
+		Duration = 5,
+	}
+	)
+
+
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local ImageLabel = Instance.new("ImageLabel")
+	local GiveCoins = Instance.new("ImageButton")
+	local TextBox_GiveCoins = Instance.new("TextBox")
+	local SuperSpeed = Instance.new("ImageButton")
+	local TextLabel = Instance.new("TextLabel")
+	local JumpHack = Instance.new("ImageButton")
+	local TextLabel_2 = Instance.new("TextLabel")
+	local GiveAllPets = Instance.new("ImageButton")
+	local TextLabel_3 = Instance.new("TextLabel")
+	local Frame_2 = Instance.new("Frame")
+	local GiveGems = Instance.new("ImageButton")
+	local TextBox_GiveGems = Instance.new("TextBox")
+	local UnlockAllAreas = Instance.new("ImageButton")
+	local TextLabel_4 = Instance.new("TextLabel")
+	local TopBar = Instance.new("ImageLabel")
+	local TextLabel_5 = Instance.new("TextLabel")
+	local Close = Instance.new("ImageButton")
+	local Rainbow = Instance.new("TextLabel")
+
+	--Properties:
+
+	ScreenGui.Parent = game.CoreGui
+	ScreenGui.Name = "KreekHub"
+
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame.BackgroundTransparency = 1.000
+	Frame.BorderSizePixel = 0
+	Frame.Position = UDim2.new(0.109895833, 0, 0.155555576, 0)
+	Frame.Size = UDim2.new(0.274069756, 0, 0.317833215, 0)
+
+	ImageLabel.Parent = Frame
+	ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ImageLabel.BackgroundTransparency = 1.000
+	ImageLabel.Size = UDim2.new(1, 0, 0.842684805, 0)
+	ImageLabel.Image = "rbxassetid://3570695787"
+	ImageLabel.ImageColor3 = Color3.fromRGB(45, 45, 45)
+	ImageLabel.ScaleType = Enum.ScaleType.Slice
+	ImageLabel.SliceCenter = Rect.new(100, 100, 100, 100)
+	ImageLabel.SliceScale = 0.020
+
+	GiveCoins.Name = "GiveCoins"
+	GiveCoins.Parent = ImageLabel
+	GiveCoins.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	GiveCoins.BackgroundTransparency = 1.000
+	GiveCoins.Position = UDim2.new(0.0883770809, 0, 0.412833482, 0)
+	GiveCoins.Size = UDim2.new(0.381471366, 0, 0.112594895, 0)
+	GiveCoins.Image = "rbxassetid://3570695787"
+	GiveCoins.ImageColor3 = Color3.fromRGB(26, 26, 26)
+	GiveCoins.ScaleType = Enum.ScaleType.Slice
+	GiveCoins.SliceCenter = Rect.new(100, 100, 100, 100)
+	GiveCoins.SliceScale = 0.020
+
+	TextBox_GiveCoins.Name = "TextBox_GiveCoins"
+	TextBox_GiveCoins.Parent = GiveCoins
+	TextBox_GiveCoins.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+	TextBox_GiveCoins.BorderSizePixel = 0
+	TextBox_GiveCoins.Position = UDim2.new(-0, 0, 0.208000004, 0)
+	TextBox_GiveCoins.Size = UDim2.new(1, 0, 0.524999976, 0)
+	TextBox_GiveCoins.Font = Enum.Font.SourceSans
+	TextBox_GiveCoins.PlaceholderText = "Give Coins ( Amount )"
+	TextBox_GiveCoins.Text = ""
+	TextBox_GiveCoins.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextBox_GiveCoins.TextScaled = true
+	TextBox_GiveCoins.TextSize = 14.000
+	TextBox_GiveCoins.TextWrapped = true
+	TextBox_GiveCoins.BackgroundTransparency = 1
+
+	SuperSpeed.Name = "SuperSpeed"
+	SuperSpeed.Parent = ImageLabel
+	SuperSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	SuperSpeed.BackgroundTransparency = 1.000
+	SuperSpeed.Position = UDim2.new(0.0901348963, 0, 0.24898082, 0)
+	SuperSpeed.Size = UDim2.new(0.379713446, 0, 0.112594895, 0)
+	SuperSpeed.Image = "rbxassetid://3570695787"
+	SuperSpeed.ImageColor3 = Color3.fromRGB(26, 26, 26)
+	SuperSpeed.ScaleType = Enum.ScaleType.Slice
+	SuperSpeed.SliceCenter = Rect.new(100, 100, 100, 100)
+	SuperSpeed.SliceScale = 0.020
+
+	TextLabel.Parent = SuperSpeed
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.Position = UDim2.new(-1.12656473e-07, 0, 0.208428606, 0)
+	TextLabel.Size = UDim2.new(1.00000024, 0, 0.524900734, 0)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = "Super Speed : OFF"
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14.000
+	TextLabel.TextWrapped = true
+
+	JumpHack.Name = "JumpHack"
+	JumpHack.Parent = ImageLabel
+	JumpHack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	JumpHack.BackgroundTransparency = 1.000
+	JumpHack.Position = UDim2.new(0.527339518, 0, 0.24898082, 0)
+	JumpHack.Size = UDim2.new(0.379713446, 0, 0.112594895, 0)
+	JumpHack.Image = "rbxassetid://3570695787"
+	JumpHack.ImageColor3 = Color3.fromRGB(26, 26, 26)
+	JumpHack.ScaleType = Enum.ScaleType.Slice
+	JumpHack.SliceCenter = Rect.new(100, 100, 100, 100)
+	JumpHack.SliceScale = 0.020
+
+	TextLabel_2.Parent = JumpHack
+	TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_2.BackgroundTransparency = 1.000
+	TextLabel_2.Position = UDim2.new(-1.12656473e-07, 0, 0.208428606, 0)
+	TextLabel_2.Size = UDim2.new(1.00000024, 0, 0.524900734, 0)
+	TextLabel_2.Font = Enum.Font.SourceSans
+	TextLabel_2.Text = "Jump Hack : OFF"
+	TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_2.TextScaled = true
+	TextLabel_2.TextSize = 14.000
+	TextLabel_2.TextWrapped = true
+
+	GiveAllPets.Name = "GiveAllPets"
+	GiveAllPets.Parent = ImageLabel
+	GiveAllPets.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	GiveAllPets.BackgroundTransparency = 1.000
+	GiveAllPets.Position = UDim2.new(0.0882344097, 0, 0.608532548, 0)
+	GiveAllPets.Size = UDim2.new(0.820936024, 0, 0.112594895, 0)
+	GiveAllPets.Image = "rbxassetid://3570695787"
+	GiveAllPets.ImageColor3 = Color3.fromRGB(26, 26, 26)
+	GiveAllPets.ScaleType = Enum.ScaleType.Slice
+	GiveAllPets.SliceCenter = Rect.new(100, 100, 100, 100)
+	GiveAllPets.SliceScale = 0.020
+
+	TextLabel_3.Parent = GiveAllPets
+	TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_3.BackgroundTransparency = 1.000
+	TextLabel_3.Position = UDim2.new(-1.12656473e-07, 0, 0.208428606, 0)
+	TextLabel_3.Size = UDim2.new(1.00000024, 0, 0.524900734, 0)
+	TextLabel_3.Font = Enum.Font.SourceSans
+	TextLabel_3.Text = "Give All Pets"
+	TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_3.TextScaled = true
+	TextLabel_3.TextSize = 14.000
+	TextLabel_3.TextWrapped = true
+
+
+	GiveGems.Name = "GiveGems"
+	GiveGems.Parent = ImageLabel
+	GiveGems.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	GiveGems.BackgroundTransparency = 1.000
+	GiveGems.Position = UDim2.new(0.527362108, 0, 0.412833482, 0)
+	GiveGems.Size = UDim2.new(0.381471366, 0, 0.112594895, 0)
+	GiveGems.Image = "rbxassetid://3570695787"
+	GiveGems.ImageColor3 = Color3.fromRGB(26, 26, 26)
+	GiveGems.ScaleType = Enum.ScaleType.Slice
+	GiveGems.SliceCenter = Rect.new(100, 100, 100, 100)
+	GiveGems.SliceScale = 0.020
+
+	TextBox_GiveGems.Name = "TextBox_GiveGems"
+	TextBox_GiveGems.Parent = GiveGems
+	TextBox_GiveGems.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+	TextBox_GiveGems.BorderSizePixel = 0
+	TextBox_GiveGems.Position = UDim2.new(-0, 0, 0.208000004, 0)
+	TextBox_GiveGems.Size = UDim2.new(1, 0, 0.524999976, 0)
+	TextBox_GiveGems.Font = Enum.Font.SourceSans
+	TextBox_GiveGems.PlaceholderText = "Give Gems ( Amount )"
+	TextBox_GiveGems.Text = ""
+	TextBox_GiveGems.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextBox_GiveGems.TextScaled = true
+	TextBox_GiveGems.TextSize = 14.000
+	TextBox_GiveGems.TextWrapped = true
+	TextBox_GiveGems.BackgroundTransparency = 1
+
+	UnlockAllAreas .Name = "UnlockAllAreas "
+	UnlockAllAreas .Parent = ImageLabel
+	UnlockAllAreas .BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UnlockAllAreas .BackgroundTransparency = 1.000
+	UnlockAllAreas .Position = UDim2.new(0.0882344097, 0, 0.756455064, 0)
+	UnlockAllAreas .Size = UDim2.new(0.820936024, 0, 0.112594895, 0)
+	UnlockAllAreas .Image = "rbxassetid://3570695787"
+	UnlockAllAreas .ImageColor3 = Color3.fromRGB(26, 26, 26)
+	UnlockAllAreas .ScaleType = Enum.ScaleType.Slice
+	UnlockAllAreas .SliceCenter = Rect.new(100, 100, 100, 100)
+	UnlockAllAreas .SliceScale = 0.020
+
+	TextLabel_4.Parent = UnlockAllAreas
+	TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_4.BackgroundTransparency = 1.000
+	TextLabel_4.Position = UDim2.new(-1.12656473e-07, 0, 0.208428606, 0)
+	TextLabel_4.Size = UDim2.new(1.00000024, 0, 0.524900734, 0)
+	TextLabel_4.Font = Enum.Font.SourceSans
+	TextLabel_4.Text = "Unlock All Areas"
+	TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_4.TextScaled = true
+	TextLabel_4.TextSize = 14.000
+	TextLabel_4.TextWrapped = true
+
+	TopBar.Name = "TopBar"
+	TopBar.Parent = Frame
+	TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TopBar.BackgroundTransparency = 1.000
+	TopBar.Position = UDim2.new(5.79946224e-08, 0, 0, 0)
+	TopBar.Size = UDim2.new(0.99874723, 0, 0.127474025, 0)
+	TopBar.Image = "rbxassetid://3570695787"
+	TopBar.ImageColor3 = Color3.fromRGB(26, 26, 26)
+	TopBar.ScaleType = Enum.ScaleType.Slice
+	TopBar.SliceCenter = Rect.new(100, 100, 100, 100)
+	TopBar.SliceScale = 0.020
+
+	TextLabel_5.Parent = TopBar
+	TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_5.BackgroundTransparency = 1.000
+	TextLabel_5.Position = UDim2.new(0.016724553, 0, 0.294569343, 0)
+	TextLabel_5.Size = UDim2.new(0.402665794, 0, 0.405892581, 0)
+	TextLabel_5.Font = Enum.Font.SourceSans
+	TextLabel_5.Text = "Kreek Hub Breaking Simulator"
+	TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_5.TextScaled = true
+	TextLabel_5.TextSize = 14.000
+	TextLabel_5.TextWrapped = true
+
+	Close.Name = "Close"
+	Close.Parent = Frame
+	Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Close.BackgroundTransparency = 1.000
+	Close.Position = UDim2.new(0.942471325, 0, 0.0396748669, 0)
+	Close.Size = UDim2.new(0.0271633919, 0, 0.0419072025, 0)
+	Close.Image = "rbxassetid://3570695787"
+	Close.ImageColor3 = Color3.fromRGB(66, 255, 33)
+	Close.ScaleType = Enum.ScaleType.Slice
+	Close.SliceCenter = Rect.new(100, 100, 100, 100)
+	Close.SliceScale = 10.000
+
+	Rainbow.Name = "Rainbow"
+	Rainbow.Parent = Frame
+	Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Rainbow.BorderSizePixel = 0
+	Rainbow.Position = UDim2.new(0, 0, 0.122474015, 0)
+	Rainbow.Size = UDim2.new(1, 0, 0.00499999989, 0)
+	Rainbow.Font = Enum.Font.SourceSans
+	Rainbow.Text = ""
+	Rainbow.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Rainbow.TextSize = 14.000
+
+	Frame_2.Parent = ImageLabel
+	Frame_2.AnchorPoint = Vector2.new(0, 1)
+	Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame_2.BorderSizePixel = 0
+	Frame_2.Position = UDim2.new(0, 0, 1.00000012, 0)
+	Frame_2.Size = UDim2.new(1, 0, 0, 0)
+
+	ImageLabel.Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+
+
+	TopBar.MouseEnter:Connect(function()
+		Frame.Active = true
+		Frame.Selectable = true
+		Frame.Draggable = true
+	end)
+
+	TopBar.MouseLeave:Connect(function()
+		Frame.Active = false
+		Frame.Selectable = false
+		Frame.Draggable = false
+	end)
+
+	local au0 = 0
+	local s1 = ImageLabel.Size
+	Close.MouseButton1Click:Connect(function()
+		if au0 == 0 then
+			au0 = 2
+			Close.ImageColor3 = Color3.fromRGB(255, 48, 48)                              
+			ImageLabel.Frame:TweenSize(UDim2.new(1,0,1,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quad,0.2,true,nil)
+			wait(0.2)
+			ImageLabel:TweenSize(UDim2.new(1,0,0,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quad,0.2,true,nil)
+			au0 = 1
+		elseif au0 == 1 then
+			au0 = 2
+			Close.ImageColor3 = Color3.fromRGB(66, 255, 33)
+			ImageLabel:TweenSize(s1,Enum.EasingDirection.Out,Enum.EasingStyle.Quad,0.2,true,nil)
+			wait(0.2)
+			ImageLabel.Frame:TweenSize(UDim2.new(1,0,0,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quad,0.2,true,nil)
+			au0 = 0
+		end
+	end)
+
+
+	----------------------------------------------------------------
+
+
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	counter = 0
+
+	spawn(function()
+		while wait(0.1)do
+			Rainbow.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+			counter = counter + 0.01
+		end
+	end)
+
+
+	for i, v in pairs(ImageLabel:GetChildren()) do
+		if v:isA("ImageButton") then
+			v.MouseEnter:Connect(function()
+				v.ImageColor3 = Color3.fromRGB(34,34,34)
+			end)
+			v.MouseLeave:Connect(function()
+				v.ImageColor3 = Color3.fromRGB(26,26,26)
+			end)
+		end
+	end
+
+
+	-------------------------------------------
+
+	local speed = false
+	local jump = false
+	local s1 = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+	local j1 =  game.Players.LocalPlayer.Character.Humanoid.JumpPower
+
+	SuperSpeed.MouseButton1Click:Connect(function()
+		if game.Players.LocalPlayer.Character.Humanoid.Health ~= 0 then
+			if speed == false then
+				speed = true 
+				TextLabel.Text = "Super Speed : ON"
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+			elseif speed == true then
+				speed = false
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s1
+				TextLabel.Text = "Super Speed : OFF"
+			end
+		end
+	end)
+
+	JumpHack.MouseButton1Click:Connect(function()
+		if game.Players.LocalPlayer.Character.Humanoid.Health ~= 0 then
+			if jump == false then
+				jump = true 
+				TextLabel_2.Text = "Jump Hack : ON"
+				game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+			elseif jump == true then
+				jump = false
+				game.Players.LocalPlayer.Character.Humanoid.JumpPower = j1
+				TextLabel_2.Text = "Jump Hack : OFF"
+			end
+		end
+	end)
+
+
+	----------------------------------
+
+	-- Give Coins
+
+	TextBox_GiveCoins.FocusLost:Connect(function()
+		local success,err = pcall(function()
+			game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Coins",TextBox_GiveCoins.Text)
+		end)
+	end)
+	
+	-- Give Give
+	
+	TextBox_GiveGems.FocusLost:Connect(function()
+		local success,err = pcall(function()
+			game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Gems",TextBox_GiveGems.Text)
+		end)
+	end)
+	
+	--------------------------------------------
+	
+	GiveAllPets.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Unicorn",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Dragon",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Hydra",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Snowman",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Ice Pig",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Ice Cat",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Ice Dog",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Reindeer",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Ice Cow",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Cat",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Dog",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Pig",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Cow",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Evil Pig",1,"Pets")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Rainbow Dog",1,"Pets")
+	end)
+	
+	UnlockAllAreas.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Zone2Gate",0,"AreasUnlocked")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Zone3Gate",0,"AreasUnlocked")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Zone4Gate",0,"AreasUnlocked")
+		game.ReplicatedStorage.Events.GivePlayerItem:FireServer("Zone5Gate",0,"AreasUnlocked")
+	end)
+
+
+end
