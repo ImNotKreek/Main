@@ -88,6 +88,10 @@ else
 	local NakedPlayer = Instance.new("ImageButton")
 	local TextBox_NakedPlayer = Instance.new("TextBox")
 	local Frame_2 = Instance.new("Frame")
+	local AnnoyServer = Instance.new("ImageButton")
+	local Text_AnnoyServer = Instance.new("TextLabel")
+	local CrashServer = Instance.new("ImageButton")
+	local Text_CrashServer = Instance.new("TextLabel")
 	local TopBar = Instance.new("ImageLabel")
 	local TextLabel = Instance.new("TextLabel")
 	local Close = Instance.new("ImageButton")
@@ -107,7 +111,8 @@ else
 	ImageLabel.Parent = Frame
 	ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ImageLabel.BackgroundTransparency = 1.000
-	ImageLabel.Size = UDim2.new(1, 0, 1.12235618, 0)
+	ImageLabel.Position = UDim2.new(0, 0, 4.44525874e-08, 0)
+	ImageLabel.Size = UDim2.new(1, 0, 1.23014629, 0)
 	ImageLabel.Image = "rbxassetid://3570695787"
 	ImageLabel.ImageColor3 = Color3.fromRGB(45, 45, 45)
 	ImageLabel.ScaleType = Enum.ScaleType.Slice
@@ -118,8 +123,8 @@ else
 	GiveCash.Parent = ImageLabel
 	GiveCash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	GiveCash.BackgroundTransparency = 1.000
-	GiveCash.Position = UDim2.new(0.0921778157, 0, 0.686322749, 0)
-	GiveCash.Size = UDim2.new(0.381471366, 0, 0.0832111016, 0)
+	GiveCash.Position = UDim2.new(0.0921778157, 0, 0.610144496, 0)
+	GiveCash.Size = UDim2.new(0.381471366, 0, 0.07314118, 0)
 	GiveCash.Image = "rbxassetid://3570695787"
 	GiveCash.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	GiveCash.ScaleType = Enum.ScaleType.Slice
@@ -129,9 +134,10 @@ else
 	TextBox_GiveCash.Name = "TextBox_GiveCash"
 	TextBox_GiveCash.Parent = GiveCash
 	TextBox_GiveCash.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+	TextBox_GiveCash.BackgroundTransparency = 1.000
 	TextBox_GiveCash.BorderSizePixel = 0
-	TextBox_GiveCash.Position = UDim2.new(0, 0, 0.21119836, 0)
-	TextBox_GiveCash.Size = UDim2.new(1, 0, 0.526154816, 0)
+	TextBox_GiveCash.Position = UDim2.new(0, 0, 0.188870639, 0)
+	TextBox_GiveCash.Size = UDim2.new(1, 0, 0.524238348, 0)
 	TextBox_GiveCash.Font = Enum.Font.SourceSans
 	TextBox_GiveCash.PlaceholderText = "Give Cash ( Amount )"
 	TextBox_GiveCash.Text = ""
@@ -139,14 +145,13 @@ else
 	TextBox_GiveCash.TextScaled = true
 	TextBox_GiveCash.TextSize = 14.000
 	TextBox_GiveCash.TextWrapped = true
-	TextBox_GiveCash.BackgroundTransparency = 1
 
 	SuperSpeed.Name = "SuperSpeed"
 	SuperSpeed.Parent = ImageLabel
 	SuperSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	SuperSpeed.BackgroundTransparency = 1.000
-	SuperSpeed.Position = UDim2.new(0.0901348963, 0, 0.193821833, 0)
-	SuperSpeed.Size = UDim2.new(0.379713446, 0, 0.0832111016, 0)
+	SuperSpeed.Position = UDim2.new(0.0901348963, 0, 0.177244395, 0)
+	SuperSpeed.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
 	SuperSpeed.Image = "rbxassetid://3570695787"
 	SuperSpeed.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	SuperSpeed.ScaleType = Enum.ScaleType.Slice
@@ -157,8 +162,8 @@ else
 	Text_SuperSpeed.Parent = SuperSpeed
 	Text_SuperSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text_SuperSpeed.BackgroundTransparency = 1.000
-	Text_SuperSpeed.Position = UDim2.new(-1.52732611e-07, 0, 0.207627803, 0)
-	Text_SuperSpeed.Size = UDim2.new(1.00000024, 0, 0.522881627, 0)
+	Text_SuperSpeed.Position = UDim2.new(-1.52732611e-07, 0, 0.206871659, 0)
+	Text_SuperSpeed.Size = UDim2.new(1.00000024, 0, 0.52097708, 0)
 	Text_SuperSpeed.Font = Enum.Font.SourceSans
 	Text_SuperSpeed.Text = "Super Speed : OFF"
 	Text_SuperSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -170,8 +175,8 @@ else
 	JumpHack.Parent = ImageLabel
 	JumpHack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	JumpHack.BackgroundTransparency = 1.000
-	JumpHack.Position = UDim2.new(0.527339578, 0, 0.193821833, 0)
-	JumpHack.Size = UDim2.new(0.379713446, 0, 0.0832111016, 0)
+	JumpHack.Position = UDim2.new(0.527339578, 0, 0.177244395, 0)
+	JumpHack.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
 	JumpHack.Image = "rbxassetid://3570695787"
 	JumpHack.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	JumpHack.ScaleType = Enum.ScaleType.Slice
@@ -182,8 +187,8 @@ else
 	Text_JumpHack.Parent = JumpHack
 	Text_JumpHack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text_JumpHack.BackgroundTransparency = 1.000
-	Text_JumpHack.Position = UDim2.new(-1.52732611e-07, 0, 0.207627803, 0)
-	Text_JumpHack.Size = UDim2.new(1.00000024, 0, 0.522881627, 0)
+	Text_JumpHack.Position = UDim2.new(-1.52732611e-07, 0, 0.206871659, 0)
+	Text_JumpHack.Size = UDim2.new(1.00000024, 0, 0.52097708, 0)
 	Text_JumpHack.Font = Enum.Font.SourceSans
 	Text_JumpHack.Text = "Jump Hack : OFF"
 	Text_JumpHack.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -195,8 +200,8 @@ else
 	KillPlayer.Parent = ImageLabel
 	KillPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	KillPlayer.BackgroundTransparency = 1.000
-	KillPlayer.Position = UDim2.new(0.525461793, 0, 0.686322749, 0)
-	KillPlayer.Size = UDim2.new(0.381471366, 0, 0.0832111016, 0)
+	KillPlayer.Position = UDim2.new(0.525461793, 0, 0.610144496, 0)
+	KillPlayer.Size = UDim2.new(0.381471366, 0, 0.07314118, 0)
 	KillPlayer.Image = "rbxassetid://3570695787"
 	KillPlayer.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	KillPlayer.ScaleType = Enum.ScaleType.Slice
@@ -206,9 +211,10 @@ else
 	TextBox_KillPlayer.Name = "TextBox_KillPlayer"
 	TextBox_KillPlayer.Parent = KillPlayer
 	TextBox_KillPlayer.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+	TextBox_KillPlayer.BackgroundTransparency = 1.000
 	TextBox_KillPlayer.BorderSizePixel = 0
-	TextBox_KillPlayer.Position = UDim2.new(-1.52028761e-07, 0, 0.21119836, 0)
-	TextBox_KillPlayer.Size = UDim2.new(1, 0, 0.526154816, 0)
+	TextBox_KillPlayer.Position = UDim2.new(-1.52028761e-07, 0, 0.188870639, 0)
+	TextBox_KillPlayer.Size = UDim2.new(1, 0, 0.524238348, 0)
 	TextBox_KillPlayer.Font = Enum.Font.SourceSans
 	TextBox_KillPlayer.PlaceholderText = "Kill Player ( Name )"
 	TextBox_KillPlayer.Text = ""
@@ -216,14 +222,13 @@ else
 	TextBox_KillPlayer.TextScaled = true
 	TextBox_KillPlayer.TextSize = 14.000
 	TextBox_KillPlayer.TextWrapped = true
-	TextBox_KillPlayer.BackgroundTransparency = 1
 
 	KillAll.Name = "KillAll"
 	KillAll.Parent = ImageLabel
 	KillAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	KillAll.BackgroundTransparency = 1.000
-	KillAll.Position = UDim2.new(0.0920352638, 0, 0.316651881, 0)
-	KillAll.Size = UDim2.new(0.379713446, 0, 0.0832111016, 0)
+	KillAll.Position = UDim2.new(0.0920352638, 0, 0.285209954, 0)
+	KillAll.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
 	KillAll.Image = "rbxassetid://3570695787"
 	KillAll.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	KillAll.ScaleType = Enum.ScaleType.Slice
@@ -234,8 +239,8 @@ else
 	Text_KillAll.Parent = KillAll
 	Text_KillAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text_KillAll.BackgroundTransparency = 1.000
-	Text_KillAll.Position = UDim2.new(-1.52732611e-07, 0, 0.211561635, 0)
-	Text_KillAll.Size = UDim2.new(1.00000024, 0, 0.526055336, 0)
+	Text_KillAll.Position = UDim2.new(-1.52732611e-07, 0, 0.205414683, 0)
+	Text_KillAll.Size = UDim2.new(1.00000024, 0, 0.524139285, 0)
 	Text_KillAll.Font = Enum.Font.SourceSans
 	Text_KillAll.Text = "Kill All"
 	Text_KillAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -247,8 +252,8 @@ else
 	KillAura.Parent = ImageLabel
 	KillAura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	KillAura.BackgroundTransparency = 1.000
-	KillAura.Position = UDim2.new(0.523419023, 0, 0.316651881, 0)
-	KillAura.Size = UDim2.new(0.379713446, 0, 0.0832111016, 0)
+	KillAura.Position = UDim2.new(0.523419023, 0, 0.285209954, 0)
+	KillAura.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
 	KillAura.Image = "rbxassetid://3570695787"
 	KillAura.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	KillAura.ScaleType = Enum.ScaleType.Slice
@@ -259,8 +264,8 @@ else
 	Text_KillAura.Parent = KillAura
 	Text_KillAura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text_KillAura.BackgroundTransparency = 1.000
-	Text_KillAura.Position = UDim2.new(-7.63663024e-07, 0, 0.211561635, 0)
-	Text_KillAura.Size = UDim2.new(1.00000024, 0, 0.526055336, 0)
+	Text_KillAura.Position = UDim2.new(-7.63663024e-07, 0, 0.205414683, 0)
+	Text_KillAura.Size = UDim2.new(1.00000024, 0, 0.524139285, 0)
 	Text_KillAura.Font = Enum.Font.SourceSans
 	Text_KillAura.Text = "Kill Aura : OFF"
 	Text_KillAura.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -272,8 +277,8 @@ else
 	NakedAll.Parent = ImageLabel
 	NakedAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	NakedAll.BackgroundTransparency = 1.000
-	NakedAll.Position = UDim2.new(0.0920352638, 0, 0.562545955, 0)
-	NakedAll.Size = UDim2.new(0.379713446, 0, 0.0832111016, 0)
+	NakedAll.Position = UDim2.new(0.0920352638, 0, 0.501346767, 0)
+	NakedAll.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
 	NakedAll.Image = "rbxassetid://3570695787"
 	NakedAll.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	NakedAll.ScaleType = Enum.ScaleType.Slice
@@ -284,8 +289,8 @@ else
 	Text_NakedAll.Parent = NakedAll
 	Text_NakedAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text_NakedAll.BackgroundTransparency = 1.000
-	Text_NakedAll.Position = UDim2.new(-1.52732611e-07, 0, 0.208738953, 0)
-	Text_NakedAll.Size = UDim2.new(1.00000024, 0, 0.526055336, 0)
+	Text_NakedAll.Position = UDim2.new(-1.52732611e-07, 0, 0.191839933, 0)
+	Text_NakedAll.Size = UDim2.new(1.00000024, 0, 0.524139285, 0)
 	Text_NakedAll.Font = Enum.Font.SourceSans
 	Text_NakedAll.Text = "Naked All"
 	Text_NakedAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -297,8 +302,8 @@ else
 	LoopKillAll.Parent = ImageLabel
 	LoopKillAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	LoopKillAll.BackgroundTransparency = 1.000
-	LoopKillAll.Position = UDim2.new(0.523419023, 0, 0.562545955, 0)
-	LoopKillAll.Size = UDim2.new(0.379713446, 0, 0.0832111016, 0)
+	LoopKillAll.Position = UDim2.new(0.523419023, 0, 0.501346767, 0)
+	LoopKillAll.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
 	LoopKillAll.Image = "rbxassetid://3570695787"
 	LoopKillAll.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	LoopKillAll.ScaleType = Enum.ScaleType.Slice
@@ -309,8 +314,8 @@ else
 	Text_LoopKillAll.Parent = LoopKillAll
 	Text_LoopKillAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text_LoopKillAll.BackgroundTransparency = 1.000
-	Text_LoopKillAll.Position = UDim2.new(-7.63663024e-07, 0, 0.208738953, 0)
-	Text_LoopKillAll.Size = UDim2.new(1.00000024, 0, 0.526055336, 0)
+	Text_LoopKillAll.Position = UDim2.new(-7.63663024e-07, 0, 0.191839933, 0)
+	Text_LoopKillAll.Size = UDim2.new(1.00000024, 0, 0.524139285, 0)
 	Text_LoopKillAll.Font = Enum.Font.SourceSans
 	Text_LoopKillAll.Text = "Loop Kill All : OFF"
 	Text_LoopKillAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -322,8 +327,8 @@ else
 	KickAll.Parent = ImageLabel
 	KickAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	KickAll.BackgroundTransparency = 1.000
-	KickAll.Position = UDim2.new(0.0920352638, 0, 0.439780861, 0)
-	KickAll.Size = UDim2.new(0.379713446, 0, 0.0832111016, 0)
+	KickAll.Position = UDim2.new(0.0920352638, 0, 0.393438339, 0)
+	KickAll.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
 	KickAll.Image = "rbxassetid://3570695787"
 	KickAll.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	KickAll.ScaleType = Enum.ScaleType.Slice
@@ -334,8 +339,8 @@ else
 	Text_KickAll.Parent = KickAll
 	Text_KickAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text_KickAll.BackgroundTransparency = 1.000
-	Text_KickAll.Position = UDim2.new(-1.52732611e-07, 0, 0.205871686, 0)
-	Text_KickAll.Size = UDim2.new(1.00000024, 0, 0.526055336, 0)
+	Text_KickAll.Position = UDim2.new(-1.52732611e-07, 0, 0.194354683, 0)
+	Text_KickAll.Size = UDim2.new(1.00000024, 0, 0.524139285, 0)
 	Text_KickAll.Font = Enum.Font.SourceSans
 	Text_KickAll.Text = "Kick All"
 	Text_KickAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -347,8 +352,8 @@ else
 	LoopKickAll.Parent = ImageLabel
 	LoopKickAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	LoopKickAll.BackgroundTransparency = 1.000
-	LoopKickAll.Position = UDim2.new(0.525319099, 0, 0.439780861, 0)
-	LoopKickAll.Size = UDim2.new(0.379713446, 0, 0.0832111016, 0)
+	LoopKickAll.Position = UDim2.new(0.525319099, 0, 0.393438339, 0)
+	LoopKickAll.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
 	LoopKickAll.Image = "rbxassetid://3570695787"
 	LoopKickAll.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	LoopKickAll.ScaleType = Enum.ScaleType.Slice
@@ -359,8 +364,8 @@ else
 	Text_LoopKickAll.Parent = LoopKickAll
 	Text_LoopKickAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text_LoopKickAll.BackgroundTransparency = 1.000
-	Text_LoopKickAll.Position = UDim2.new(-1.52732611e-07, 0, 0.205871686, 0)
-	Text_LoopKickAll.Size = UDim2.new(1.00000024, 0, 0.526055336, 0)
+	Text_LoopKickAll.Position = UDim2.new(-1.52732611e-07, 0, 0.194354683, 0)
+	Text_LoopKickAll.Size = UDim2.new(1.00000024, 0, 0.524139285, 0)
 	Text_LoopKickAll.Font = Enum.Font.SourceSans
 	Text_LoopKickAll.Text = "Loop Kick All : OFF"
 	Text_LoopKickAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -372,8 +377,8 @@ else
 	KickPlayer.Parent = ImageLabel
 	KickPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	KickPlayer.BackgroundTransparency = 1.000
-	KickPlayer.Position = UDim2.new(0.525461793, 0, 0.819979727, 0)
-	KickPlayer.Size = UDim2.new(0.381471366, 0, 0.0832111016, 0)
+	KickPlayer.Position = UDim2.new(0.525461793, 0, 0.727626681, 0)
+	KickPlayer.Size = UDim2.new(0.381471366, 0, 0.07314118, 0)
 	KickPlayer.Image = "rbxassetid://3570695787"
 	KickPlayer.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	KickPlayer.ScaleType = Enum.ScaleType.Slice
@@ -383,9 +388,10 @@ else
 	TextBox_KickPlayer.Name = "TextBox_KickPlayer"
 	TextBox_KickPlayer.Parent = KickPlayer
 	TextBox_KickPlayer.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+	TextBox_KickPlayer.BackgroundTransparency = 1.000
 	TextBox_KickPlayer.BorderSizePixel = 0
-	TextBox_KickPlayer.Position = UDim2.new(-1.52028761e-07, 0, 0.233628407, 0)
-	TextBox_KickPlayer.Size = UDim2.new(1, 0, 0.528080046, 0)
+	TextBox_KickPlayer.Position = UDim2.new(-1.52028761e-07, 0, 0.205370218, 0)
+	TextBox_KickPlayer.Size = UDim2.new(1, 0, 0.526156604, 0)
 	TextBox_KickPlayer.Font = Enum.Font.SourceSans
 	TextBox_KickPlayer.PlaceholderText = "Kick Player ( Name )"
 	TextBox_KickPlayer.Text = ""
@@ -393,14 +399,13 @@ else
 	TextBox_KickPlayer.TextScaled = true
 	TextBox_KickPlayer.TextSize = 14.000
 	TextBox_KickPlayer.TextWrapped = true
-	TextBox_KickPlayer.BackgroundTransparency = 1
 
 	NakedPlayer.Name = "NakedPlayer"
 	NakedPlayer.Parent = ImageLabel
 	NakedPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	NakedPlayer.BackgroundTransparency = 1.000
-	NakedPlayer.Position = UDim2.new(0.0921778157, 0, 0.819979727, 0)
-	NakedPlayer.Size = UDim2.new(0.381471366, 0, 0.0832111016, 0)
+	NakedPlayer.Position = UDim2.new(0.0921778157, 0, 0.727626681, 0)
+	NakedPlayer.Size = UDim2.new(0.381471366, 0, 0.07314118, 0)
 	NakedPlayer.Image = "rbxassetid://3570695787"
 	NakedPlayer.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	NakedPlayer.ScaleType = Enum.ScaleType.Slice
@@ -410,9 +415,10 @@ else
 	TextBox_NakedPlayer.Name = "TextBox_NakedPlayer"
 	TextBox_NakedPlayer.Parent = NakedPlayer
 	TextBox_NakedPlayer.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+	TextBox_NakedPlayer.BackgroundTransparency = 1.000
 	TextBox_NakedPlayer.BorderSizePixel = 0
-	TextBox_NakedPlayer.Position = UDim2.new(0, 0, 0.233628407, 0)
-	TextBox_NakedPlayer.Size = UDim2.new(1, 0, 0.528080046, 0)
+	TextBox_NakedPlayer.Position = UDim2.new(0, 0, 0.205370218, 0)
+	TextBox_NakedPlayer.Size = UDim2.new(1, 0, 0.526156604, 0)
 	TextBox_NakedPlayer.Font = Enum.Font.SourceSans
 	TextBox_NakedPlayer.PlaceholderText = "Naked Player ( Name )"
 	TextBox_NakedPlayer.Text = ""
@@ -420,8 +426,57 @@ else
 	TextBox_NakedPlayer.TextScaled = true
 	TextBox_NakedPlayer.TextSize = 14.000
 	TextBox_NakedPlayer.TextWrapped = true
-	TextBox_NakedPlayer.BackgroundTransparency = 1
 
+
+	AnnoyServer.Name = "AnnoyServer"
+	AnnoyServer.Parent = ImageLabel
+	AnnoyServer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	AnnoyServer.BackgroundTransparency = 1.000
+	AnnoyServer.Position = UDim2.new(0.0958359987, 0, 0.834150493, 0)
+	AnnoyServer.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
+	AnnoyServer.Image = "rbxassetid://3570695787"
+	AnnoyServer.ImageColor3 = Color3.fromRGB(26, 26, 26)
+	AnnoyServer.ScaleType = Enum.ScaleType.Slice
+	AnnoyServer.SliceCenter = Rect.new(100, 100, 100, 100)
+	AnnoyServer.SliceScale = 0.020
+
+	Text_AnnoyServer.Name = "Text_AnnoyServer"
+	Text_AnnoyServer.Parent = AnnoyServer
+	Text_AnnoyServer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Text_AnnoyServer.BackgroundTransparency = 1.000
+	Text_AnnoyServer.Position = UDim2.new(-1.52732611e-07, 0, 0.191839039, 0)
+	Text_AnnoyServer.Size = UDim2.new(1.00000024, 0, 0.524139225, 0)
+	Text_AnnoyServer.Font = Enum.Font.SourceSans
+	Text_AnnoyServer.Text = "Annoy Server : OFF"
+	Text_AnnoyServer.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Text_AnnoyServer.TextScaled = true
+	Text_AnnoyServer.TextSize = 14.000
+	Text_AnnoyServer.TextWrapped = true
+
+	CrashServer.Name = "CrashServer"
+	CrashServer.Parent = ImageLabel
+	CrashServer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	CrashServer.BackgroundTransparency = 1.000
+	CrashServer.Position = UDim2.new(0.527219713, 0, 0.834150493, 0)
+	CrashServer.Size = UDim2.new(0.379713446, 0, 0.07314118, 0)
+	CrashServer.Image = "rbxassetid://3570695787"
+	CrashServer.ImageColor3 = Color3.fromRGB(26, 26, 26)
+	CrashServer.ScaleType = Enum.ScaleType.Slice
+	CrashServer.SliceCenter = Rect.new(100, 100, 100, 100)
+	CrashServer.SliceScale = 0.020
+
+	Text_CrashServer.Name = "Text_CrashServer"
+	Text_CrashServer.Parent = CrashServer
+	Text_CrashServer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Text_CrashServer.BackgroundTransparency = 1.000
+	Text_CrashServer.Position = UDim2.new(-7.63663024e-07, 0, 0.191839039, 0)
+	Text_CrashServer.Size = UDim2.new(1.00000024, 0, 0.524139225, 0)
+	Text_CrashServer.Font = Enum.Font.SourceSans
+	Text_CrashServer.Text = "Crash Server"
+	Text_CrashServer.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Text_CrashServer.TextScaled = true
+	Text_CrashServer.TextSize = 14.000
+	Text_CrashServer.TextWrapped = true
 
 	TopBar.Name = "TopBar"
 	TopBar.Parent = Frame
@@ -767,7 +822,7 @@ else
 			end
 		end)
 	end)
-	
+
 	TextBox_NakedPlayer.FocusLost:Connect(function()
 		local success,err = pcall(function()
 			for i, v in pairs(GetPlayer(TextBox_NakedPlayer.Text)) do
@@ -787,16 +842,52 @@ else
 			end
 		end)
 	end)
-	
+
 	TextBox_KickPlayer.FocusLost:Connect(function()
 		local success,err = pcall(function()
 			for i,v in pairs(GetPlayer(TextBox_KickPlayer.Text)) do
 				if game.Players[v] then 
-				game.ReplicatedStorage.Events.destryObj:FireServer(game.Players[v])
+					game.ReplicatedStorage.Events.destryObj:FireServer(game.Players[v])
 				else
 				end
 			end
 		end)
+	end)
+	
+	--------------------------
+	
+	local au4 = false
+
+	AnnoyServer.MouseButton1Click:Connect(function()
+		if au4 == false then
+			Text_AnnoyServer.Text = "Annoy Server : ON"
+			game.ReplicatedStorage.Events.CrateClaim:FireServer("Gear",game.ReplicatedStorage.Weapons["AK-47"])
+			wait(0.2)
+			game.Players.LocalPlayer.Backpack["AK-47"].Parent = game.Players.LocalPlayer.Character
+			au4 = true
+		elseif au4 == true then
+			au4 = false
+			Text_AnnoyServer.Text = "Annoy Server : OFF"
+		end
+	end)
+	
+	spawn(function()
+	while true do
+		wait(0.1)
+		if au4 == true then
+			game.ReplicatedStorage.WeaponItems.RemoteEvents.CreateSound:FireServer(game.Players.LocalPlayer.Character["AK-47"].Handle.Fire)
+			if game.Players.LocalPlayer.Backpack["AK-47"] then
+				game.Players.LocalPlayer.Backpack["AK-47"].Parent = game.Players.LocalPlayer.Character
+			end
+			else
+		end
+		end
+	end)
+	
+	CrashServer.MouseButton1Click:Connect(function()
+		for i, v in pairs(game.Players:GetChildren()) do
+			game.ReplicatedStorage.Events.destryObj:FireServer(v)
+		end
 	end)
 
 end
