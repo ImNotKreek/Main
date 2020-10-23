@@ -1004,7 +1004,7 @@ else
 
 	TextBox_TeleportToPlayer.FocusLost:Connect(function()
 		local success,err = pcall(function()
-			for i,v in pairs(GetPlayer(TextBox_KickPlayer.Text)) do
+			for i,v in pairs(GetPlayer(TextBox_TeleportToPlayer.Text)) do
 				if game.Players[v] then 
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[v].Character.HumanoidRootPart.CFrame
 				else
@@ -1015,7 +1015,7 @@ else
 
 	TextBox_RagdollPlayer.FocusLost:Connect(function()
 		local success,err = pcall(function()
-			for i,v in pairs(GetPlayer(TextBox_KickPlayer.Text)) do
+			for i,v in pairs(GetPlayer(TextBox_RagdollPlayer.Text)) do
 				if game.Players[v] then 
 					game.ReplicatedStorage.Events.destryObj:FireServer(game.Players[v].Character.Humanoid)
 				else
