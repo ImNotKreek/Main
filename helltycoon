@@ -807,7 +807,10 @@ else
 	TextBox_KickPlayer.FocusLost:Connect(function()
 		local success,err = pcall(function()
 			for i,v in pairs(GetPlayer(TextBox_KickPlayer.Text)) do
+				if game.Players[v] then 
 				game.ReplicatedStorage.Events.destryObj:FireServer(game.Players[v])
+				else
+				end
 			end
 		end)
 	end)
