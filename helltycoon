@@ -303,7 +303,7 @@ else
 	Text_NakedAll.Position = UDim2.new(-1.52732611e-07, 0, 0.208738953, 0)
 	Text_NakedAll.Size = UDim2.new(1.00000024, 0, 0.526055336, 0)
 	Text_NakedAll.Font = Enum.Font.SourceSans
-	Text_NakedAll.Text = "Naked All : OFF"
+	Text_NakedAll.Text = "Naked All"
 	Text_NakedAll.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Text_NakedAll.TextScaled = true
 	Text_NakedAll.TextSize = 14.000
