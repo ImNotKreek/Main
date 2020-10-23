@@ -875,6 +875,7 @@ else
 	while true do
 		wait(0.1)
 		if au4 == true then
+		
 			game.ReplicatedStorage.WeaponItems.RemoteEvents.CreateSound:FireServer(game.Players.LocalPlayer.Character["AK-47"].Handle.Fire)
 			if game.Players.LocalPlayer.Backpack["AK-47"] then
 				game.Players.LocalPlayer.Backpack["AK-47"].Parent = game.Players.LocalPlayer.Character
