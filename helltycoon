@@ -49,23 +49,7 @@ else
 	function GetPlayer(String)
 		local Found = {}
 		local strl = String:lower()
-		if strl == "all" then
-			for i,v in pairs(game.Players:GetPlayers()) do
-				table.insert(Found,v.Name)
-			end
-		elseif strl == "others" then
-			for i,v in pairs(game.Players:GetPlayers()) do
-				if v.Name ~= game.Players.LocalPlayer.Name then
-					table.insert(Found,v.Name)
-				end
-			end   
-		elseif strl == "me" then
-			for i,v in pairs(game.Players:GetPlayers()) do
-				if v.Name == game.Players.LocalPlayer.Name then
-					table.insert(Found,v.Name)
-				end
-			end  
-		else
+		if strl ~= "" then
 			for i,v in pairs(game.Players:GetPlayers()) do
 				if v.Name:lower():sub(1, #String) == String:lower() then
 					table.insert(Found,v.Name)
