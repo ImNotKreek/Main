@@ -506,6 +506,7 @@ else
 	local j1 =  game.Players.LocalPlayer.Character.Humanoid.JumpPower
 
 	SuperSpeed.MouseButton1Click:Connect(function()
+		local success,err = pcall(function()
 		if game.Players.LocalPlayer.Character.Humanoid.Health ~= 0 then
 			if speed == false then
 				speed = true 
@@ -516,10 +517,12 @@ else
 				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s1
 				Text_SuperSpeed.Text = "Super Speed : OFF"
 			end
-		end
+			end
+		end)
 	end)
 
 	JumpHack.MouseButton1Click:Connect(function()
+		local success,err = pcall(function()
 		if game.Players.LocalPlayer.Character.Humanoid.Health ~= 0 then
 			if jump == false then
 				jump = true 
@@ -530,22 +533,27 @@ else
 				game.Players.LocalPlayer.Character.Humanoid.JumpPower = j1
 				Text_JumpHack.Text = "Jump Hack : OFF"
 			end
-		end
-	end)
-	
-	spawn(function()
-		game:GetService("RunService").RenderStepped:Connect(function()
-			if speed == true then
-				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 			end
 		end)
 	end)
 	
 	spawn(function()
 		game:GetService("RunService").RenderStepped:Connect(function()
+			local success,err = pcall(function()
+			if speed == true then
+					game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+				end
+			end)
+		end)
+	end)
+	
+	spawn(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			local success,err = pcall(function()
 			if speed == true then
 				game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
-			end
+				end
+			end)
 		end)
 	end)
 
@@ -553,11 +561,15 @@ else
 	----------------------------------
 
 	KillAll.MouseButton1Click:Connect(function()
+		local success,err = pcall(function()
 		for i, v in pairs(game.Players:GetChildren()) do
 			if v.Name ~= game.Players.LocalPlayer.Name then
-				game.ReplicatedStorage.Events.destryObj:FireServer(v.Character.Torso.Neck)
+				if v.Character.Humanoid.Health ~= 0 then
+					game.ReplicatedStorage.Events.destryObj:FireServer(v.Character.Torso.Neck)
+				end
 			end
-		end
+			end
+		end)
 	end)
 	
 	local au1 = false
@@ -577,13 +589,17 @@ else
 		while true do
 			wait(0.1)
 			if au1 == true then
+				local success,err = pcall(function()
 				for i, v in pairs(game.Players:GetChildren()) do
 					if v.Name ~= game.Players.LocalPlayer.Name then
+						if v.Character.Humanoid.Health ~= 0 then
 						if (v.Character.HumanoidRootPart.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude < 50 then
 							game.ReplicatedStorage.Events.destryObj:FireServer(v.Character.Torso.Neck)
+							end
 						end
 					end
-				end
+					end
+				end)
 			else
 				
 			end
@@ -593,11 +609,15 @@ else
 	---------------------------------------------------------------------------
 	
 	KickAll.MouseButton1Click:Connect(function()
+		local success,err = pcall(function()
 		for i, v in pairs(game.Players:GetChildren()) do
 			if v.Name ~= game.Players.LocalPlayer.Name then
-				game.ReplicatedStorage.Events.destryObj:FireServer(v)
+				if v.Character.Humanoid.Health ~= 0 then
+					game.ReplicatedStorage.Events.destryObj:FireServer(v)
+				end
 			end
-		end
+			end
+		end)
 	end)
 	
 	---------------------------------------
@@ -618,11 +638,13 @@ else
 		while true do
 			wait(0.1)
 			if au2 == true then
+				local success,err = pcall(function()
 				for i, v in pairs(game.Players:GetChildren()) do
 					if v.Name ~= game.Players.LocalPlayer.Name then
 						game.ReplicatedStorage.Events.destryObj:FireServer(v)
 					end
-				end
+					end
+				end)
 			else
 
 			end
@@ -634,8 +656,10 @@ else
 	
 	
 	NakedAll.MouseButton1Click:Connect(function()
+		local success,err = pcall(function()
 		for i, v in pairs(game.Players:GetChildren()) do
 			if v.Name ~= game.Players.LocalPlayer.Name then
+				if v.Character.Humanoid.Health ~= 0 then
 				if v.Character:FindFirstChildOfClass("Shirt") then
 					game.ReplicatedStorage.Events.destryObj:FireServer(v.Character:FindFirstChildOfClass("Shirt"))
 				end
@@ -644,9 +668,11 @@ else
 				end
 				if v.Character:FindFirstChild("Shirt Graphic") then
 					game.ReplicatedStorage.Events.destryObj:FireServer(v.Character:FindFirstChildOfClass("Shirt Graphic"))
+					end
 				end
 			end
-		end
+			end
+		end)
 	end)
 	
 	
@@ -668,11 +694,16 @@ else
 		while true do
 			wait(0.1)
 			if au3 == true then
+				local success,err = pcall(function()
 				for i, v in pairs(game.Players:GetChildren()) do
 					if v.Name ~= game.Players.LocalPlayer.Name then
-						game.ReplicatedStorage.Events.destryObj:FireServer(v.Character.Torso.Neck)
+						if v.Character.Humanoid.Health ~= 0 then
+							game.ReplicatedStorage.Events.destryObj:FireServer(v.Character.Torso.Neck)
+						end
 					end
-				end
+					end
+					
+				end)
 			else
 
 			end
@@ -690,7 +721,9 @@ else
 	TextBox_KillPlayer.FocusLost:Connect(function()
 		local success,err = pcall(function()
 			for i,v in pairs(GetPlayer(TextBox_KillPlayer.Text)) do
-				game.ReplicatedStorage.Events.destryObj:FireServer(game.Players[v].Character.Torso.Neck)
+				if game.Players[v].Character.Humanoid.Health ~= 0 then
+					game.ReplicatedStorage.Events.destryObj:FireServer(game.Players[v].Character.Torso.Neck)
+				end
 			end
 		end)
 	end)
