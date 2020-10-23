@@ -60,6 +60,11 @@ else
 	end
 
 
+	-- Gui to Lua
+	-- Version: 3.2
+
+	-- Instances:
+
 	local KreekHub = Instance.new("ScreenGui")
 	local Frame = Instance.new("Frame")
 	local ImageLabel = Instance.new("ImageLabel")
@@ -117,12 +122,13 @@ else
 	Frame.BackgroundTransparency = 1.000
 	Frame.BorderSizePixel = 0
 	Frame.Position = UDim2.new(0.109895833, 0, 0.155555576, 0)
-	Frame.Size = UDim2.new(0.274069756, 0, 0.317833215, 0)
+	Frame.Size = UDim2.new(0.298028082, 0, 0.317833215, 0)
 
 	ImageLabel.Parent = Frame
 	ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ImageLabel.BackgroundTransparency = 1.000
-	ImageLabel.Size = UDim2.new(1.07981539, 0, 1.56225622, 0)
+	ImageLabel.Position = UDim2.new(0, 0, 4.44525874e-08, 0)
+	ImageLabel.Size = UDim2.new(1, 0, 1.56200004, 0)
 	ImageLabel.Image = "rbxassetid://3570695787"
 	ImageLabel.ImageColor3 = Color3.fromRGB(45, 45, 45)
 	ImageLabel.ScaleType = Enum.ScaleType.Slice
@@ -160,8 +166,8 @@ else
 	SuperSpeed.Parent = ImageLabel
 	SuperSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	SuperSpeed.BackgroundTransparency = 1.000
-	SuperSpeed.Position = UDim2.new(0.0920000002, 0, 0.137444705, 0)
-	SuperSpeed.Size = UDim2.new(0.379999995, 0, 0.0551008284, 0)
+	SuperSpeed.Position = UDim2.new(0.0919999778, 0, 0.135579929, 0)
+	SuperSpeed.Size = UDim2.new(0.379999995, 0, 0.0569656007, 0)
 	SuperSpeed.Image = "rbxassetid://3570695787"
 	SuperSpeed.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	SuperSpeed.ScaleType = Enum.ScaleType.Slice
@@ -185,8 +191,8 @@ else
 	JumpHack.Parent = ImageLabel
 	JumpHack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	JumpHack.BackgroundTransparency = 1.000
-	JumpHack.Position = UDim2.new(0.52700001, 0, 0.137444705, 0)
-	JumpHack.Size = UDim2.new(0.379999995, 0, 0.0551008284, 0)
+	JumpHack.Position = UDim2.new(0.52699995, 0, 0.135579929, 0)
+	JumpHack.Size = UDim2.new(0.379999995, 0, 0.0569656007, 0)
 	JumpHack.Image = "rbxassetid://3570695787"
 	JumpHack.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	JumpHack.ScaleType = Enum.ScaleType.Slice
@@ -622,8 +628,7 @@ else
 	TopBar.Parent = Frame
 	TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	TopBar.BackgroundTransparency = 1.000
-	TopBar.Position = UDim2.new(5.79946224e-08, 0, 0, 0)
-	TopBar.Size = UDim2.new(1.0784626, 0, 0.127474025, 0)
+	TopBar.Size = UDim2.new(1, 0, 0.127474025, 0)
 	TopBar.Image = "rbxassetid://3570695787"
 	TopBar.ImageColor3 = Color3.fromRGB(26, 26, 26)
 	TopBar.ScaleType = Enum.ScaleType.Slice
@@ -646,8 +651,8 @@ else
 	Close.Parent = Frame
 	Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Close.BackgroundTransparency = 1.000
-	Close.Position = UDim2.new(1.01658571, 0, 0.0455013551, 0)
-	Close.Size = UDim2.new(0.0271633919, 0, 0.0419072025, 0)
+	Close.Position = UDim2.new(0.943186641, 0, 0.0455013588, 0)
+	Close.Size = UDim2.new(0.0254157912, 0, 0.0419072025, 0)
 	Close.Image = "rbxassetid://3570695787"
 	Close.ImageColor3 = Color3.fromRGB(66, 255, 33)
 	Close.ScaleType = Enum.ScaleType.Slice
@@ -659,12 +664,12 @@ else
 	Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Rainbow.BorderSizePixel = 0
 	Rainbow.Position = UDim2.new(0, 0, 0.122474037, 0)
-	Rainbow.Size = UDim2.new(1.07981539, 0, 0.00499999989, 0)
+	Rainbow.Size = UDim2.new(1, 0, 0.00499999989, 0)
 	Rainbow.Font = Enum.Font.SourceSans
 	Rainbow.Text = ""
 	Rainbow.TextColor3 = Color3.fromRGB(0, 0, 0)
 	Rainbow.TextSize = 14.000
-	
+
 	Frame_2.Parent = ImageLabel
 	Frame_2.AnchorPoint = Vector2.new(0, 1)
 	Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -672,7 +677,8 @@ else
 	Frame_2.Position = UDim2.new(0, 0, 1.00000012, 0)
 	Frame_2.Size = UDim2.new(1, 0, 0, 0)
 
-	ImageLabel.Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+
+	ImageLabel.Frame.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
 
 
 	TopBar.MouseEnter:Connect(function()
@@ -1006,7 +1012,7 @@ else
 			end
 		end)
 	end)
-	
+
 	TextBox_RagdollPlayer.FocusLost:Connect(function()
 		local success,err = pcall(function()
 			for i,v in pairs(GetPlayer(TextBox_KickPlayer.Text)) do
@@ -1017,7 +1023,7 @@ else
 			end
 		end)
 	end)
-	
+
 	RagdollAll.MouseButton1Click:Connect(function()
 		local success,err = pcall(function()
 			for i, v in pairs(game.Players:GetChildren()) do
@@ -1027,9 +1033,9 @@ else
 			end
 		end)
 	end)
-	
+
 	local cd = false
-	
+
 	ClickDestroy.MouseButton1Click:Connect(function()
 		if cd == false then
 			cd = true
@@ -1039,9 +1045,9 @@ else
 			Text_ClickDestroy.Text = "Click Destroy : OFF"
 		end
 	end)
-	
+
 	local mouse = game.Players.LocalPlayer:GetMouse()
-	
+
 	mouse.Button1Down:Connect(function()
 		local success,err = pcall(function()
 			if cd == true then
@@ -1049,7 +1055,7 @@ else
 			end
 		end)
 	end)
-	
+
 	DestroyAllCashGivers.MouseButton1Click:Connect(function()
 		for i, v in pairs(game.Workspace["Zednov's Tycoon Kit"].Tycoons:GetChildren()) do
 			local success,err = pcall(function()
@@ -1057,14 +1063,14 @@ else
 			end)
 		end
 	end)
-	
+
 	GiveWeapons.MouseButton1Click:Connect(function()
 		game.ReplicatedStorage.Events.CrateClaim:FireServer("Gear",game.Lighting.BigRocketLauncher)
 		game.ReplicatedStorage.Events.CrateClaim:FireServer("Gear",game.ReplicatedStorage.Weapons["The Black Hole"])
 		game.ReplicatedStorage.Events.CrateClaim:FireServer("Gear",game.ReplicatedStorage.Weapons["AK-47"])
 	end)
-	
-	
+
+
 	CrashServer.MouseButton1Click:Connect(function()
 		for i, v in pairs(game.Players:GetChildren()) do
 			game.ReplicatedStorage.Events.destryObj:FireServer(v)
