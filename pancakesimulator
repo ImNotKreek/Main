@@ -2,51 +2,7 @@
 -- Version: 3.2
 
 
-	if game.CoreGui:FindFirstChild("KreekHub") then
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Kreek Hub",
-			Text = "Script already loaded!",
-			Duration = 5,
-		})
 
-	else
-
-		---------------------------------------------------------------------------------------------
-
-
-
-		local fps = 60
-		local clock = tick()
-
-		spawn(function()
-			while true do
-				while clock + 1/fps > tick() do end
-				wait()
-				clock = tick()
-			end
-		end)
-
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Kreek Hub",
-			Text = "Loading...",
-			Duration = 5,
-		}
-		)
-
-		wait(1)
-
-		fps = 0.5
-
-		wait(2)
-
-		fps = 60
-
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Loaded Kreek Hub!",
-			Text = "Made by ImNotKreek#0001",
-			Duration = 5,
-		}
-		)
 
 		-- Instances:
 
@@ -691,4 +647,3 @@ ImageLabel.Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 
 		-------------------------------------------------
 
-	end
