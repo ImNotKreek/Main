@@ -1056,18 +1056,22 @@
 		local success,err = pcall(function()
 			for i,v in pairs(GetPlayer(TextBox_RagdollPlayer.Text)) do
 				if game.Players[v] then 
-					game.ReplicatedStorage.Events.destryObj:FireServer(game.Players[v].Character.Humanoid)
+					game.ReplicatedStorage.Events.destryObj:FireServer(game.Players[v].Character.HumanoidRootPart) -- MAKE v.CHARACTER.HUMANOID IF YOU WANT TO RAGDOLL PERMANENTLY
 				else
 				end
 			end
 		end)
 	end)
 
+    --------------- RAGDOLL ALL
+    
+    --- CHANGE THIS
+    
 	RagdollAll.MouseButton1Click:Connect(function()
 		local success,err = pcall(function()
 			for i, v in pairs(game.Players:GetChildren()) do
 				if v.Name ~= game.Players.LocalPlayer.Name then
-					game.ReplicatedStorage.Events.destryObj:FireServer(v.Character.Humanoid)
+					game.ReplicatedStorage.Events.destryObj:FireServer(v.Character.HumanoidRootPart) -- MAKE v.CHARACTER.HUMANOID IF YOU WANT TO RAGDOLL PERMANENTLY
 				end
 			end
 		end)
