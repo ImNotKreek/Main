@@ -3,6 +3,8 @@
 
 -- Instances:
 
+print("Updated!")
+
 function GetPlayer(String)
 	local Found = {}
 	local strl = String:lower()
