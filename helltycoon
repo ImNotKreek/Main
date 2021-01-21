@@ -1184,7 +1184,7 @@ end)
 
 GiveAllCash.MouseButton1Click:Connect(function()
 	for i,v in pairs(game.ReplicatedStorage.PlayerMoney:GetChildren()) do
-		game.ReplicatedStorage.Events.changeValue:InvokeServer(v, inf)
+		game.ReplicatedStorage.Events.changeValue:InvokeServer(v, "inf")
 	end
 end)
 
