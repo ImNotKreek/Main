@@ -1151,6 +1151,7 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 mouse.Button1Down:Connect(function()
 	local success,err = pcall(function()
 		if cd == true then
+		print(mouse.Target.Name)
 			if mouse.Target.Name ~= "Baseplate" then
 				game.ReplicatedStorage.Events.destryObj:FireServer(mouse.Target)
 			else
@@ -1176,7 +1177,7 @@ end)
 
 GiveAllCash.MouseButton1Click:Connect(function()
 	for i,v in pairs(game.ReplicatedStorage.PlayerMoney:GetChildren()) do
-		game.ReplicatedStorage.Events.changeValue:InvokeServer(v, 99999999999999)
+		game.ReplicatedStorage.Events.changeValue:InvokeServer(v, inf)
 	end
 end)
 
