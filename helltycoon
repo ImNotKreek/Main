@@ -1152,7 +1152,7 @@ mouse.Button1Down:Connect(function()
 	local success,err = pcall(function()
 		if cd == true then
 		print(mouse.Target.Name)
-			if mouse.Target.Name ~= "Baseplate" then
+			if mouse.Target.Name ~= "Baseplate" and mouse.Target.Name ~= "baseplate" then
 				game.ReplicatedStorage.Events.destryObj:FireServer(mouse.Target)
 			else
 			
