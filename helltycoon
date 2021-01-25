@@ -81,7 +81,7 @@ local Close = Instance.new("TextButton")
 --Properties:
 
 MainScript.Name = "MainScript"
-MainScript.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainScript.Parent = game.CoreGui
 MainScript.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MainScript.ResetOnSpawn = false
 
@@ -89,15 +89,15 @@ Frame.Parent = MainScript
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.390931457, 0, 0.202852279, 0)
-Frame.Size = UDim2.new(0.375214398, 0, 0.354315698, 0)
+Frame.Position = UDim2.new(0.34247753, 0, 0.202903926, 0)
+Frame.Size = UDim2.new(0.423602641, 0, 0.379533768, 0)
 
 Main.Name = "Main"
 Main.Parent = Frame
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BackgroundTransparency = 1.000
-Main.Position = UDim2.new(0, 0, -3.98754807e-08, 0)
-Main.Size = UDim2.new(1.00135648, 0, 1, 0)
+Main.Position = UDim2.new(0.00173951138, 0, 3.72259557e-08, 0)
+Main.Size = UDim2.new(0.999616981, 0, 1, 0)
 Main.Image = "rbxassetid://3570695787"
 Main.ImageColor3 = Color3.fromRGB(39, 39, 39)
 Main.ScaleType = Enum.ScaleType.Slice
@@ -818,8 +818,8 @@ Top.Name = "Top"
 Top.Parent = Frame
 Top.BackgroundColor3 = Color3.fromRGB(226, 226, 226)
 Top.BackgroundTransparency = 1.000
-Top.Position = UDim2.new(0, 0, -0.00204744632, 0)
-Top.Size = UDim2.new(1.00135648, 0, 0.133484095, 0)
+Top.Position = UDim2.new(0.00173951138, 0, -0.0020474277, 0)
+Top.Size = UDim2.new(0.999616981, 0, 0.13348411, 0)
 Top.Image = "rbxassetid://3570695787"
 Top.ImageColor3 = Color3.fromRGB(65, 65, 65)
 Top.ScaleType = Enum.ScaleType.Slice
@@ -851,7 +851,6 @@ Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
-
 
 Top.MouseEnter:Connect(function()
 	Frame.Active = true
@@ -1137,13 +1136,13 @@ spawn(function()
 				for i, v in pairs(game.Players:GetChildren()) do
 					--------------------------------------------------------------
 					if WHITELIST_FRIENDS == false then
-					if v.Name ~= game.Players.LocalPlayer.Name then
-						if v.Character.Humanoid.Health ~= 0 then
-							if (v.Character.HumanoidRootPart.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude < KILL_AURA_RANGE then
-								game.ReplicatedStorage.Events.destryObj:FireServer(v.Character.Torso.Neck)
+						if v.Name ~= game.Players.LocalPlayer.Name then
+							if v.Character.Humanoid.Health ~= 0 then
+								if (v.Character.HumanoidRootPart.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude < KILL_AURA_RANGE then
+									game.ReplicatedStorage.Events.destryObj:FireServer(v.Character.Torso.Neck)
+								end
 							end
 						end
-					end
 					elseif 	WHITELIST_FRIENDS == true then
 						if v.Name ~= game.Players.LocalPlayer.Name and not v:IsFriendsWith(game.Players.LocalPlayer.UserId) then
 							if v.Character.Humanoid.Health ~= 0 then
@@ -1235,11 +1234,11 @@ spawn(function()
 					--------------------------------------------------------------
 					if WHITELIST_FRIENDS == false then
 						if v.Name ~= game.Players.LocalPlayer.Name then
-								game.ReplicatedStorage.Events.destryObj:FireServer(v)
+							game.ReplicatedStorage.Events.destryObj:FireServer(v)
 						end
 					elseif 	WHITELIST_FRIENDS == true then
 						if v.Name ~= game.Players.LocalPlayer.Name and not v:IsFriendsWith(game.Players.LocalPlayer.UserId) then
-								game.ReplicatedStorage.Events.destryObj:FireServer(v)
+							game.ReplicatedStorage.Events.destryObj:FireServer(v)
 						end
 					end
 					--------------------------------------------------------------
