@@ -78,6 +78,8 @@ local GiveAllCash = Instance.new("TextButton")
 local TextLabel_22 = Instance.new("TextLabel")
 local ResetAllCash = Instance.new("TextButton")
 local TextLabel_23 = Instance.new("TextLabel")
+local InfiniteAirstrike = Instance.new("TextButton")
+local TextLabel_24 = Instance.new("TextLabel")
 local Top = Instance.new("ImageLabel")
 local Title = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
@@ -93,15 +95,15 @@ Frame.Parent = MainScript
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.0289358497, 0, 0.613005877, 0)
-Frame.Size = UDim2.new(0.423602641, 0, 0.338876277, 0)
+Frame.Position = UDim2.new(0.108623341, 0, 0.43251279, 0)
+Frame.Size = UDim2.new(0.423602641, 0, 0.369369417, 0)
 
 Main.Name = "Main"
 Main.Parent = Frame
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BackgroundTransparency = 1.000
-Main.Position = UDim2.new(0.00173953676, 0, -5.5299879e-06, 0)
-Main.Size = UDim2.new(0.999616981, 0, 0.997280657, 0)
+Main.Position = UDim2.new(0.00173953676, 0, -0.00251352158, 0)
+Main.Size = UDim2.new(0.999616981, 0, 0.999781728, 0)
 Main.Image = "rbxassetid://3570695787"
 Main.ImageColor3 = Color3.fromRGB(39, 39, 39)
 Main.ScaleType = Enum.ScaleType.Slice
@@ -111,8 +113,8 @@ Main.SliceScale = 0.080
 SuperSpeed.Name = "SuperSpeed"
 SuperSpeed.Parent = Main
 SuperSpeed.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-SuperSpeed.Position = UDim2.new(0.0521048978, 0, 0.194323182, 0)
-SuperSpeed.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+SuperSpeed.Position = UDim2.new(0.0521048978, 0, 0.189308465, 0)
+SuperSpeed.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 SuperSpeed.Font = Enum.Font.SourceSansBold
 SuperSpeed.Text = ""
 SuperSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -135,8 +137,8 @@ TextLabel.TextWrapped = true
 JumpHack.Name = "JumpHack"
 JumpHack.Parent = Main
 JumpHack.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-JumpHack.Position = UDim2.new(0.0521048978, 0, 0.275178075, 0)
-JumpHack.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+JumpHack.Position = UDim2.new(0.0521048978, 0, 0.262764543, 0)
+JumpHack.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 JumpHack.Font = Enum.Font.SourceSansBold
 JumpHack.Text = ""
 JumpHack.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -159,8 +161,8 @@ TextLabel_2.TextWrapped = true
 KillAll.Name = "KillAll"
 KillAll.Parent = Main
 KillAll.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-KillAll.Position = UDim2.new(0.0521048978, 0, 0.352755815, 0)
-KillAll.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+KillAll.Position = UDim2.new(0.0521048978, 0, 0.333243191, 0)
+KillAll.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 KillAll.Font = Enum.Font.SourceSansBold
 KillAll.Text = ""
 KillAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -183,8 +185,8 @@ TextLabel_3.TextWrapped = true
 KickAll.Name = "KickAll"
 KickAll.Parent = Main
 KickAll.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-KickAll.Position = UDim2.new(0.0521048978, 0, 0.433610529, 0)
-KickAll.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+KickAll.Position = UDim2.new(0.0521048978, 0, 0.406698972, 0)
+KickAll.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 KickAll.Font = Enum.Font.SourceSansBold
 KickAll.Text = ""
 KickAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -207,8 +209,8 @@ TextLabel_4.TextWrapped = true
 NakedAll.Name = "NakedAll"
 NakedAll.Parent = Main
 NakedAll.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NakedAll.Position = UDim2.new(0.0521048978, 0, 0.511188269, 0)
-NakedAll.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+NakedAll.Position = UDim2.new(0.0521048978, 0, 0.477177769, 0)
+NakedAll.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 NakedAll.Font = Enum.Font.SourceSansBold
 NakedAll.Text = ""
 NakedAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -231,8 +233,8 @@ TextLabel_5.TextWrapped = true
 RagdollAll.Name = "RagdollAll"
 RagdollAll.Parent = Main
 RagdollAll.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-RagdollAll.Position = UDim2.new(0.0521048978, 0, 0.593119025, 0)
-RagdollAll.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+RagdollAll.Position = UDim2.new(0.0521048978, 0, 0.551611245, 0)
+RagdollAll.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 RagdollAll.Font = Enum.Font.SourceSansBold
 RagdollAll.Text = ""
 RagdollAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -255,8 +257,8 @@ TextLabel_6.TextWrapped = true
 FreezeAll.Name = "FreezeAll"
 FreezeAll.Parent = Main
 FreezeAll.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-FreezeAll.Position = UDim2.new(0.0521048978, 0, 0.675050497, 0)
-FreezeAll.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+FreezeAll.Position = UDim2.new(0.0521048978, 0, 0.626045227, 0)
+FreezeAll.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 FreezeAll.Font = Enum.Font.SourceSansBold
 FreezeAll.Text = ""
 FreezeAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -279,8 +281,8 @@ TextLabel_7.TextWrapped = true
 WhitelistFriends.Name = "WhitelistFriends"
 WhitelistFriends.Parent = Main
 WhitelistFriends.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-WhitelistFriends.Position = UDim2.new(0.360359609, 0, 0.588552296, 0)
-WhitelistFriends.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+WhitelistFriends.Position = UDim2.new(0.360359609, 0, 0.547462523, 0)
+WhitelistFriends.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 WhitelistFriends.Font = Enum.Font.SourceSansBold
 WhitelistFriends.Text = ""
 WhitelistFriends.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -303,8 +305,8 @@ TextLabel_8.TextWrapped = true
 CrashServer.Name = "CrashServer"
 CrashServer.Parent = Main
 CrashServer.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-CrashServer.Position = UDim2.new(0.360359609, 0, 0.670967281, 0)
-CrashServer.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+CrashServer.Position = UDim2.new(0.360359609, 0, 0.622335672, 0)
+CrashServer.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 CrashServer.Font = Enum.Font.SourceSansBold
 CrashServer.Text = ""
 CrashServer.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -327,8 +329,8 @@ TextLabel_9.TextWrapped = true
 InfiniteJump.Name = "InfiniteJump"
 InfiniteJump.Parent = Main
 InfiniteJump.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-InfiniteJump.Position = UDim2.new(0.360359609, 0, 0.511188269, 0)
-InfiniteJump.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+InfiniteJump.Position = UDim2.new(0.360359609, 0, 0.477177769, 0)
+InfiniteJump.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 InfiniteJump.Font = Enum.Font.SourceSansBold
 InfiniteJump.Text = ""
 InfiniteJump.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -351,8 +353,8 @@ TextLabel_10.TextWrapped = true
 ClickDestroy.Name = "ClickDestroy"
 ClickDestroy.Parent = Main
 ClickDestroy.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-ClickDestroy.Position = UDim2.new(0.360359609, 0, 0.433610529, 0)
-ClickDestroy.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+ClickDestroy.Position = UDim2.new(0.360359609, 0, 0.406698972, 0)
+ClickDestroy.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 ClickDestroy.Font = Enum.Font.SourceSansBold
 ClickDestroy.Text = ""
 ClickDestroy.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -375,8 +377,8 @@ TextLabel_11.TextWrapped = true
 LoopKickAll.Name = "LoopKickAll"
 LoopKickAll.Parent = Main
 LoopKickAll.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-LoopKickAll.Position = UDim2.new(0.360359609, 0, 0.352755815, 0)
-LoopKickAll.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+LoopKickAll.Position = UDim2.new(0.360359609, 0, 0.333243191, 0)
+LoopKickAll.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 LoopKickAll.Font = Enum.Font.SourceSansBold
 LoopKickAll.Text = ""
 LoopKickAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -399,8 +401,8 @@ TextLabel_12.TextWrapped = true
 LoopKillAll.Name = "LoopKillAll"
 LoopKillAll.Parent = Main
 LoopKillAll.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-LoopKillAll.Position = UDim2.new(0.360359609, 0, 0.275178075, 0)
-LoopKillAll.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+LoopKillAll.Position = UDim2.new(0.360359609, 0, 0.262764543, 0)
+LoopKillAll.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 LoopKillAll.Font = Enum.Font.SourceSansBold
 LoopKillAll.Text = ""
 LoopKillAll.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -423,8 +425,8 @@ TextLabel_13.TextWrapped = true
 KillAura.Name = "KillAura"
 KillAura.Parent = Main
 KillAura.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-KillAura.Position = UDim2.new(0.360359609, 0, 0.194323182, 0)
-KillAura.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+KillAura.Position = UDim2.new(0.360359609, 0, 0.189308465, 0)
+KillAura.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 KillAura.Font = Enum.Font.SourceSansBold
 KillAura.Text = ""
 KillAura.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -447,8 +449,8 @@ TextLabel_14.TextWrapped = true
 GiveCash.Name = "GiveCash"
 GiveCash.Parent = Main
 GiveCash.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-GiveCash.Position = UDim2.new(0.668482184, 0, 0.194323182, 0)
-GiveCash.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+GiveCash.Position = UDim2.new(0.668482184, 0, 0.189308465, 0)
+GiveCash.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 GiveCash.Font = Enum.Font.SourceSansBold
 GiveCash.Text = ""
 GiveCash.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -472,8 +474,8 @@ TextBox.TextWrapped = true
 KillPlayer.Name = "KillPlayer"
 KillPlayer.Parent = Main
 KillPlayer.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-KillPlayer.Position = UDim2.new(0.668482184, 0, 0.275415033, 0)
-KillPlayer.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+KillPlayer.Position = UDim2.new(0.668482184, 0, 0.262979716, 0)
+KillPlayer.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 KillPlayer.Font = Enum.Font.SourceSansBold
 KillPlayer.Text = ""
 KillPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -497,8 +499,8 @@ TextBox_2.TextWrapped = true
 KickPlayer.Name = "KickPlayer"
 KickPlayer.Parent = Main
 KickPlayer.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-KickPlayer.Position = UDim2.new(0.668482184, 0, 0.352647185, 0)
-KickPlayer.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+KickPlayer.Position = UDim2.new(0.668482184, 0, 0.333144635, 0)
+KickPlayer.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 KickPlayer.Font = Enum.Font.SourceSansBold
 KickPlayer.Text = ""
 KickPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -522,8 +524,8 @@ TextBox_3.TextWrapped = true
 NakedPlayer.Name = "NakedPlayer"
 NakedPlayer.Parent = Main
 NakedPlayer.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NakedPlayer.Position = UDim2.new(0.668482184, 0, 0.433189303, 0)
-NakedPlayer.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+NakedPlayer.Position = UDim2.new(0.668482184, 0, 0.40631637, 0)
+NakedPlayer.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 NakedPlayer.Font = Enum.Font.SourceSansBold
 NakedPlayer.Text = ""
 NakedPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -547,8 +549,8 @@ TextBox_4.TextWrapped = true
 RagdollPlayer.Name = "RagdollPlayer"
 RagdollPlayer.Parent = Main
 RagdollPlayer.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-RagdollPlayer.Position = UDim2.new(0.668482184, 0, 0.511524558, 0)
-RagdollPlayer.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+RagdollPlayer.Position = UDim2.new(0.668482184, 0, 0.477483362, 0)
+RagdollPlayer.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 RagdollPlayer.Font = Enum.Font.SourceSansBold
 RagdollPlayer.Text = ""
 RagdollPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -572,8 +574,8 @@ TextBox_5.TextWrapped = true
 FreezePlayer.Name = "FreezePlayer"
 FreezePlayer.Parent = Main
 FreezePlayer.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-FreezePlayer.Position = UDim2.new(0.668482184, 0, 0.593170166, 0)
-FreezePlayer.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+FreezePlayer.Position = UDim2.new(0.668482184, 0, 0.551657617, 0)
+FreezePlayer.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 FreezePlayer.Font = Enum.Font.SourceSansBold
 FreezePlayer.Text = ""
 FreezePlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -597,8 +599,8 @@ TextBox_6.TextWrapped = true
 TeleportToPlayer.Name = "TeleportToPlayer"
 TeleportToPlayer.Parent = Main
 TeleportToPlayer.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-TeleportToPlayer.Position = UDim2.new(0.668482184, 0, 0.674815595, 0)
-TeleportToPlayer.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+TeleportToPlayer.Position = UDim2.new(0.668482184, 0, 0.625831902, 0)
+TeleportToPlayer.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 TeleportToPlayer.Font = Enum.Font.SourceSansBold
 TeleportToPlayer.Text = ""
 TeleportToPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -622,8 +624,8 @@ TextBox_7.TextWrapped = true
 WeaponsButton.Name = "WeaponsButton"
 WeaponsButton.Parent = Main
 WeaponsButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-WeaponsButton.Position = UDim2.new(0.288822085, 0, 0.752047598, 0)
-WeaponsButton.Size = UDim2.new(0.0411876068, 0, 0.0794387609, 0)
+WeaponsButton.Position = UDim2.new(0.288822085, 0, 0.695996523, 0)
+WeaponsButton.Size = UDim2.new(0.0411876068, 0, 0.0721694529, 0)
 WeaponsButton.Font = Enum.Font.SourceSansBold
 WeaponsButton.Text = ""
 WeaponsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -646,8 +648,8 @@ TextLabel_15.TextWrapped = true
 GiveWeapon.Name = "GiveWeapon"
 GiveWeapon.Parent = Main
 GiveWeapon.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-GiveWeapon.Position = UDim2.new(0.0516690239, 0, 0.751587808, 0)
-GiveWeapon.Size = UDim2.new(0.237153143, 0, 0.0794387609, 0)
+GiveWeapon.Position = UDim2.new(0.0516690239, 0, 0.695578754, 0)
+GiveWeapon.Size = UDim2.new(0.237153143, 0, 0.0721694529, 0)
 GiveWeapon.Font = Enum.Font.SourceSansBold
 GiveWeapon.Text = ""
 GiveWeapon.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -670,8 +672,8 @@ TextLabel_16.TextWrapped = true
 WeaponsFrame.Name = "WeaponsFrame"
 WeaponsFrame.Parent = Main
 WeaponsFrame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
-WeaponsFrame.Position = UDim2.new(0.0521048978, 0, 0.8311764, 0)
-WeaponsFrame.Size = UDim2.new(0.277999997, 0, 0.349544078, 0)
+WeaponsFrame.Position = UDim2.new(0.0521048978, 0, 0.767884493, 0)
+WeaponsFrame.Size = UDim2.new(0.277999997, 0, 0.317557871, 0)
 WeaponsFrame.Visible = false
 
 AK47.Name = "AK47"
@@ -796,8 +798,8 @@ TextLabel_21.TextWrapped = true
 KillAuraRange.Name = "KillAuraRange"
 KillAuraRange.Parent = Main
 KillAuraRange.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-KillAuraRange.Position = UDim2.new(0.668482184, 0, 0.752663851, 0)
-KillAuraRange.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+KillAuraRange.Position = UDim2.new(0.668482184, 0, 0.69655633, 0)
+KillAuraRange.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 KillAuraRange.Font = Enum.Font.SourceSansBold
 KillAuraRange.Text = ""
 KillAuraRange.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -821,8 +823,8 @@ TextBox_8.TextWrapped = true
 GiveAllCash.Name = "GiveAllCash"
 GiveAllCash.Parent = Main
 GiveAllCash.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-GiveAllCash.Position = UDim2.new(0.360359609, 0, 0.752898753, 0)
-GiveAllCash.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+GiveAllCash.Position = UDim2.new(0.360359609, 0, 0.696769834, 0)
+GiveAllCash.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 GiveAllCash.Font = Enum.Font.SourceSansBold
 GiveAllCash.Text = ""
 GiveAllCash.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -845,8 +847,8 @@ TextLabel_22.TextWrapped = true
 ResetAllCash.Name = "ResetAllCash"
 ResetAllCash.Parent = Main
 ResetAllCash.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-ResetAllCash.Position = UDim2.new(0.360359609, 0, 0.830747306, 0)
-ResetAllCash.Size = UDim2.new(0.277904838, 0, 0.0798915401, 0)
+ResetAllCash.Position = UDim2.new(0.360359609, 0, 0.767494559, 0)
+ResetAllCash.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
 ResetAllCash.Font = Enum.Font.SourceSansBold
 ResetAllCash.Text = ""
 ResetAllCash.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -866,12 +868,36 @@ TextLabel_23.TextScaled = true
 TextLabel_23.TextSize = 14.000
 TextLabel_23.TextWrapped = true
 
+InfiniteAirstrike.Name = "InfiniteAirstrike"
+InfiniteAirstrike.Parent = Main
+InfiniteAirstrike.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+InfiniteAirstrike.Position = UDim2.new(0.360359609, 0, 0.837699592, 0)
+InfiniteAirstrike.Size = UDim2.new(0.277904838, 0, 0.072580792, 0)
+InfiniteAirstrike.Font = Enum.Font.SourceSansBold
+InfiniteAirstrike.Text = ""
+InfiniteAirstrike.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteAirstrike.TextScaled = true
+InfiniteAirstrike.TextSize = 14.000
+InfiniteAirstrike.TextWrapped = true
+
+TextLabel_24.Parent = InfiniteAirstrike
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.Position = UDim2.new(0.100000001, 0, 0.100000001, 0)
+TextLabel_24.Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
+TextLabel_24.Font = Enum.Font.SourceSansBold
+TextLabel_24.Text = "Infinite Airstrike : OFF"
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.TextScaled = true
+TextLabel_24.TextSize = 14.000
+TextLabel_24.TextWrapped = true
+
 Top.Name = "Top"
 Top.Parent = Frame
 Top.BackgroundColor3 = Color3.fromRGB(226, 226, 226)
 Top.BackgroundTransparency = 1.000
-Top.Position = UDim2.new(0.00173953676, 0, -0.00204738439, 0)
-Top.Size = UDim2.new(0.999616981, 0, 0.113657072, 0)
+Top.Position = UDim2.new(0.00173953676, 0, -0.0045604459, 0)
+Top.Size = UDim2.new(0.999616981, 0, 0.113942116, 0)
 Top.Image = "rbxassetid://3570695787"
 Top.ImageColor3 = Color3.fromRGB(49, 49, 49)
 Top.ScaleType = Enum.ScaleType.Slice
@@ -1505,3 +1531,60 @@ mouse.Button1Down:Connect(function()
 	end)
 end)
 
+
+-------------------
+
+-- INFINITE AIRSTRIKE
+
+local INF_AIRSTRIKE = false
+
+InfiniteAirstrike.MouseButton1Click:Connect(function()
+	if INF_AIRSTRIKE == false then
+		INF_AIRSTRIKE = true
+		InfiniteAirstrike.TextLabel.Text = "Infinite Airstrike : OFF"
+	elseif INF_AIRSTRIKE == true then
+		INF_AIRSTRIKE = false
+		InfiniteAirstrike.TextLabel.Text = "Infinite Airstrike : ON"
+	end
+end)
+
+mouse = game.Players.LocalPlayer:GetMouse()
+
+mouse.Button1Down:Connect(function()
+	if INF_AIRSTRIKE == true then
+	local success,err = pcall(function()
+		game.Players.LocalPlayer.Character["Tactical Airstrike"].OnMouseClick:FireServer(mouse.Hit.p)
+		wait()
+		spawn(function()
+			for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+				if v.Name == "Tactical Airstrike" then
+					v.Parent = game.Lighting
+					wait(18)
+					game.ReplicatedStorage.Events.destryObj:FireServer(v)
+				end
+			end
+		end)
+		spawn(function()
+			for i, v in pairs(game.Lighting:GetChildren()) do
+				if v.Name == "AdminTools" then
+					local success,err = pcall(function()
+						game.ReplicatedStorage.Events.CrateClaim:FireServer("Gear",v["Tactical Airstrike"])
+						wait()
+					end)
+				end
+			end
+		end)
+		spawn(function()
+			wait(0.2)
+			for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v.Name == "Tactical Airstrike" then
+					print("ok")
+					v.Parent = game.Players.LocalPlayer.Character
+					break
+				end
+			end
+		end)
+
+		end)
+	end
+end)
