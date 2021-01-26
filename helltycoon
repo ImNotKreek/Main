@@ -11,6 +11,7 @@ function GetPlayer(String)
 	return Found    
 end
 
+print("UPDATE CHECK")
 
 local MainScript = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
