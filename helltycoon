@@ -1578,7 +1578,6 @@ mouse.Button1Down:Connect(function()
 			wait(0.2)
 			for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 				if v.Name == "Tactical Airstrike" then
-					print("ok")
 					v.Parent = game.Players.LocalPlayer.Character
 					break
 				end
