@@ -325,7 +325,7 @@ TextLabel_9.Text = "Crash Server"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextScaled = true
 TextLabel_9.TextSize = 14.000
-TextLabel_9.TextWrapped = true
+TextLabel_9.TextWrapped = true 
 
 InfiniteJump.Name = "InfiniteJump"
 InfiniteJump.Parent = Main
