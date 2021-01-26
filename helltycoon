@@ -1541,10 +1541,10 @@ local INF_AIRSTRIKE = false
 InfiniteAirstrike.MouseButton1Click:Connect(function()
 	if INF_AIRSTRIKE == false then
 		INF_AIRSTRIKE = true
-		InfiniteAirstrike.TextLabel.Text = "Infinite Airstrike : OFF"
+		InfiniteAirstrike.TextLabel.Text = "Infinite Airstrike : ON"
 	elseif INF_AIRSTRIKE == true then
 		INF_AIRSTRIKE = false
-		InfiniteAirstrike.TextLabel.Text = "Infinite Airstrike : ON"
+		InfiniteAirstrike.TextLabel.Text = "Infinite Airstrike : OFF"
 	end
 end)
 
